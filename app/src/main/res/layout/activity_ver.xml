@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".9"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:id="@+id/viewNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/hint_nombre" />
+
+        <EditText
+
+            android:id="@+id/txtNombre"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:labelFor="@+id/viewNombre"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp" />
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:id="@+id/viewApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_ApellidoP" />
+
+        <EditText
+            android:id="@+id/txtApellidos"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text|textPersonName"
+            android:labelFor="@+id/viewCorreo"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp" />
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:id="@+id/viewApellidoM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_ApellidoM" />
+
+        <EditText
+            android:id="@+id/txtApellidoM"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text|textPersonName"
+            android:labelFor="@+id/viewCorreo"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:id="@+id/viewMatricula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_Matricula" />
+
+        <EditText
+            android:id="@+id/txtMatricula"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:labelFor="@+id/viewTelefono"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:id="@+id/viewSexo"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_Sexo" />
+
+        <EditText
+            android:id="@+id/txtSexo"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:labelFor="@+id/viewCorreo"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp" />
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/viewFecha_nacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/hint_Fecha_nacimiento" />
+
+        <EditText
+
+            android:id="@+id/txtFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="20dp"
+            android:inputType="text|date"
+            android:labelFor="@+id/viewCorreo"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btnfecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="abrircalendario"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/calendar"
+            android:text="Fecha" />
+
+
+        <Button
+            android:id="@+id/btnGuarda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/tajetas"
+            android:text="@string/btn_guarda" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_edit" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabEliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30dp"
+            android:layout_marginLeft="325dp"
+            android:clickable="true"
+            android:src="@drawable/delete_24" />
+
+    </LinearLayout>
+<!--
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        tools:ignore="BottomAppBar">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_edit" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>-->
+</LinearLayout>

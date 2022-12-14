@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Alumnos</string>
+    <string name="app_ver">Ver Detalles</string>
+    <string name="app_editar">Editar Datos</string>
+    <string name="app_nuevo">Agregar Nuevo</string>
+    <string name="hint_nombre">Nombre:</string>
+    <string name="hint_Matricula">Matricula:</string>
+    <string name="hint_ApellidoP">Apellido Paterno:</string>
+    <string name="hint_ApellidoM">Apellido Materno:</string>
+    <string name="hint_Sexo">Género:</string>
+    <string name="hint_Fecha_nacimiento">Fecha de nacimiento:</string>
+    <string name="btn_guarda">Guardar registro</string>
+    <string name="menu_nuevo">Nuevo registro</string>
+</resources>
